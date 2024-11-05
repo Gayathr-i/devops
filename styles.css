@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fcfbfb;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: rgb(251, 245, 245);
+    text-decoration: none;
+    
+}
+#background {
+    /* replace with your image path */
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color: #fff; /* Adjust text color to make it readable */
+}
+
+h1.animated-title {
+    text-align: center;
+    font-size: 2em;
+    color: #0f0f0f; 
+    text-shadow: 2px 2px 5px rgb(63, 61, 61); 
+    animation: slideIn 1s ease-out; 
+    font-family: 'Charm';
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.head {
+    font-size: 3em; 
+    background: linear-gradient(to right, #1b2eff, #6399d3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: 'Almendra SC';
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.hackathon-info {
+    display: flex;
+    align-items: center;
+}
+
+.hackathon-image {
+    max-width: 50%;
+    color: rgb(12, 12, 12);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px;
+    width: 90%;
+    height: 300px; 
+    position: relative; 
+}
+
+.hackathon-details {
+    max-width: 50%;
+    padding-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#participate, #why-participate,#how-to-participate,#challenges {
+    
+    padding: 40px 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 5%;
+    gap: 15px;
+}
+
+.card {
+    border: 1px solid #b9b2b2; 
+    border-radius: 8px; 
+    padding: 20px; 
+    width: 30%; 
+    height: 150px; 
+    text-align: center; 
+    transition: transform 0.2s; 
+    background-color: #69aefc; /* Dark background for cards */
+    color: #ffffff; /* White text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    background-color: #1d2781; /* Slightly lighter on hover */
+}
+
+.note {
+    color: red;
+    text-align: center;
+    margin-top: 10px; 
+}
+
+section {
+    background-image: url(card.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover; 
+    background-position: center;
+    margin: auto;
+    position: relative;
+    margin-left: auto;
+    
+}
+
+section h2 {
+    color: rgb(255, 253, 253);
+    font-weight: 400;
+    
+}
+
+footer {
+    background-color: #5d79f9;
+    color: rgb(10, 9, 9);
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: rgb(12, 12, 12);
+}
+
+
+
+
+#schedule {
+    background-color: #348ef0; /* Dark background for the schedule box */
+    color: #ffffff; /* White text color */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(29, 3, 173, 0.5); /* Shadow for depth */
+    margin: 20px auto; /* Center the box with margin */
+    max-width: 600px; /* Maximum width of the box */
+    animation: fadeInUp 0.8s ease-in-out; /* Animation for the box */
+    width: 100%;
+}
+
+#schedule h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 15px;
+    color: white; /* Space below the heading */
+}
+
+#schedule ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+}
+
+#schedule li {
+    padding: 10px; /* Padding for each list item */
+    margin: 10px 0; /* Margin between items */
+    background-color: #5f9af9; /* Slightly lighter background for items */
+    border-radius: 5px; /* Rounded corners for items */
+    animation: slideIn 0.5s ease forwards; /* Animation for each item */
+    opacity: 0; /* Start with opacity 0 for fade-in effect */
+}
+
+/* Animation for the schedule box */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animation for each list item */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
